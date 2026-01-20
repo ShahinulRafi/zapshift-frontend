@@ -1,16 +1,27 @@
 import React from "react";
+import Logo from "../Logo/Logo";
+import { NavLink } from "react-router";
 
 const NavBar = () => {
   const links = (
     <>
       <li>
-        <a>Item 1</a>
+        <NavLink to='/services'>Services</NavLink>
       </li>
       <li>
-        <a>Item 2</a>
+        <NavLink to='/coverage'>Coverage</NavLink>
       </li>
       <li>
-        <a>Item 3</a>
+        <NavLink to='/about'>About Us</NavLink>
+      </li>
+      <li>
+        <NavLink to='/pricing'>Pricing</NavLink>
+      </li>
+      <li>
+        <NavLink to='/Blog'>Blog</NavLink>
+      </li>
+      <li>
+        <NavLink to='/contact'>Contact</NavLink>
       </li>
     </>
   );
@@ -42,7 +53,7 @@ const NavBar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+       <Logo></Logo>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
