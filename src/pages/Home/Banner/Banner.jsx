@@ -8,17 +8,28 @@ import { Carousel } from "react-responsive-carousel";
 
 const Banner = () => {
   return (
-    <Carousel autoPlay={true} infiniteLoop={true}>
-      <div>
-        <img src={Banner1} />
-      </div>
-      <div>
-        <img src={Banner2} />
-      </div>
-      <div>
-        <img src={Banner3} />
-      </div>
-    </Carousel>
+    <div className="h-4/5 w-4/5 mx-32">
+      <Carousel
+      //  autoPlay={true} infiniteLoop={true}
+      >
+        <div className="relateive">
+          <img src={Banner1} height={32} width={32} />
+          <button className="absolute btn btn-primary text-[16px] text-black font-bold rounded-[99px] top-74 left-14">
+            Track your percel{" "}
+          </button>
+          <BsArrowUpRightCircleFill className="absolute top-75 left-55 text-3xl" />{" "}
+          <button className="absolute btn font-bold rounded-xl text-[16px] top-74 left-68">
+            Be a rider
+          </button>
+        </div>
+        <div>
+          <img src={Banner2} />
+        </div>
+        <div>
+          <img src={Banner3} />
+        </div>
+      </Carousel>
+    </div>
   );
 };
 
