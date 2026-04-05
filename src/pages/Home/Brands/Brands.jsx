@@ -21,7 +21,7 @@ const Brands = () => {
       grabCursor={true}
       modules={[Autoplay]}
       autoplay={{
-        delay: 2500,
+        delay: 1000,
         disableOnInteraction: false,
       }}
     >
